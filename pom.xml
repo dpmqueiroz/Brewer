@@ -23,6 +23,9 @@
   		
   		<!-- Versão do Servlet-api -->
   		<servlet-api.version>4.0.1</servlet-api.version>
+  		
+  		<!-- Versão do Thymeleaf -->
+  		<thymeleaf.version>3.0.12.RELEASE</thymeleaf.version>
   </properties>
   
   <build>
@@ -64,6 +67,20 @@
 		  <artifactId>javax.servlet-api</artifactId>
 		  <version>${servlet-api.version}</version>
 		  <scope>provided</scope>
+		</dependency>
+		
+		<!-- Thymeleaf -->
+		
+		<dependency>
+		  <groupId>org.thymeleaf</groupId>
+		  <artifactId>thymeleaf</artifactId>
+		  <version>${thymeleaf.version}</version>
+		</dependency>
+
+		<dependency>
+		  <groupId>org.thymeleaf</groupId>
+		  <artifactId>thymeleaf-spring5</artifactId>
+		  <version>${thymeleaf.version}</version>
 		</dependency>
 		
   </dependencies>
