@@ -2,7 +2,9 @@ package com.algaworks.brewer.model;
 
 public class Cerveja {
 
+	@javax.validation.constraints.NotBlank
 	private String sku;
+	
 	private String nome;
 	
 	public String getSku() {
