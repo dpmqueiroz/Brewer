@@ -16,6 +16,8 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 import com.algaworks.brewer.controller.CervejasController;
 
+import nz.net.ultraq.thymeleaf.LayoutDialect;
+
 @Configuration
 @ComponentScan(basePackageClasses = { CervejasController.class })
 @EnableWebMvc
@@ -48,6 +50,7 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware{
 		// across different data types, so this flag is "false" by default
 		// for safer backwards compatibility.
 		templateEngine.setEnableSpringELCompiler(true);
+		templateEngine.addDialect(new LayoutDialect());
 		return templateEngine;
 	}
 	

@@ -33,6 +33,9 @@
   		
   		<!-- Versão do javax-validation -->
   		<javax-validation.version>2.0.1.Final</javax-validation.version>
+  		
+  		<!-- Versão do thymeleaf-layout-diact -->
+  		<thymeleaf-layout-dialect>2.5.2</thymeleaf-layout-dialect>
   </properties>
   
   <build>
@@ -106,6 +109,13 @@
 		  <groupId>javax.validation</groupId>
 		  <artifactId>validation-api</artifactId>
 		  <version>${javax-validation.version}</version>
+		</dependency>
+		
+		<!-- Thymeleaf - layout Dialect -->
+		<dependency>
+		  <groupId>com.github.zhanhb</groupId>
+		  <artifactId>thymeleaf-layout-dialect</artifactId>
+		  <version>${thymeleaf-layout-dialect}</version>
 		</dependency>
 		
   </dependencies>
