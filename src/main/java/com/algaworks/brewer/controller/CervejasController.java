@@ -29,5 +29,17 @@ public class CervejasController {
 
 		return "redirect:/cervejas/novo";
 	}
+	/* ######################################            SOMENTE PARA TESTAR O HTML                  ############################################  */
+	@RequestMapping("/clientes/novo")
+	public String novo2() {
+		return "cliente/CadastroCliente";
+	}
 	
+	@RequestMapping("/usuarios/novo")
+	public String novo4() {
+		return "usuario/CadastroUsuario";
+	}
+	/* ##########################################################################################################################################  */
 }
+
+
