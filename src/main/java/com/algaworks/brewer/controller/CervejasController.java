@@ -39,6 +39,16 @@ public class CervejasController {
 	public String novo4() {
 		return "usuario/CadastroUsuario";
 	}
+	
+	@RequestMapping("/cidades/novo")
+	public String novo5() {
+		return "cidade/CadastroCidade";
+	}
+	
+	@RequestMapping("/estilos/novo")
+	public String novo6() {
+		return "estilo/CadastroEstilo";
+	}
 	/* ##########################################################################################################################################  */
 }
 
