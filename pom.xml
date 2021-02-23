@@ -36,6 +36,10 @@
   		
   		<!-- Versão do thymeleaf-layout-diact -->
   		<thymeleaf-layout-dialect>2.5.2</thymeleaf-layout-dialect>
+  		
+  		<!-- Logging -->
+		<log4j.version>2.14.0</log4j.version>                                   <!-- antes era 2.6 -->
+		<jcl-over-slf4j.version>2.0.0-alpha1</jcl-over-slf4j.version>            <!-- antes era 1.7.21 -->
   </properties>
   
   <build>
@@ -116,6 +120,28 @@
 		  <groupId>com.github.zhanhb</groupId>
 		  <artifactId>thymeleaf-layout-dialect</artifactId>
 		  <version>${thymeleaf-layout-dialect}</version>
+		</dependency>
+		
+		<!-- Logging -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${jcl-over-slf4j.version}</version>
 		</dependency>
 		
   </dependencies>
